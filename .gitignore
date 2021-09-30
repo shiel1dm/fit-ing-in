@@ -1,3 +1,5 @@
 CRITERIA.md
-package.json
+
 seeders
+package-lock.json
+node_modules
