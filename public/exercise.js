@@ -143,6 +143,7 @@ if (workoutTypeSelect) {
 if (completeButton) {
   completeButton.addEventListener("click", function (event) {
     shouldNavigateAway = true;
+    console.log('works')
     handleFormSubmit(event);
   });
 }
