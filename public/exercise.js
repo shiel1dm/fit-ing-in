@@ -113,6 +113,7 @@ async function handleFormSubmit(event) {
     workoutData.reps = Number(repsInput.value.trim());
     workoutData.duration = Number(resistanceDurationInput.value.trim());
   }
+  console.log(workoutData, event)
 
   await API.addExercise(workoutData);
   clearInputs();
@@ -143,7 +144,6 @@ if (workoutTypeSelect) {
 if (completeButton) {
   completeButton.addEventListener("click", function (event) {
     shouldNavigateAway = true;
-    console.log('works')
     handleFormSubmit(event);
   });
 }
